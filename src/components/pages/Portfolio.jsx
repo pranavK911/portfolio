@@ -11,25 +11,25 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Service Book Karo",
+      title: "Smart E-commerce App",
       category: "Mobile Apps",
-      image: "/assets/projects/servicebookkaro.png",
+      image: "src/assets/appicon.png",
       link: "#",
     },
 
     {
       id: 2,
-      title: "Y7 Steamyrides",
+      title: "ChatCode",
       category: "Mobile Apps",
-      image: "/assets/projects/steamyrides.png",
+      image: "src/assets/chatCode.png",
       link: "#",
     },
 
     {
       id: 3,
-      title: "Admin Dashboard",
-      category: "Web Apps",
-      image: "/assets/projects/dashboard.png",
+      title: "SafeZ",
+      category: "Mobile Apps",
+      image: "src/assets/safez.png",
       link: "#",
     },
 
@@ -81,7 +81,7 @@ const Portfolio = () => {
       <ul className="project-list">
         {filteredProjects.map((project) => (
           <li className="project-item" key={project.id}>
-            <a href={project.link} target="_blank">
+            <a href={project.link} target="#">
               <figure className="project-img-box">
                 <img src={project.image} alt={project.title} loading="lazy" />
 

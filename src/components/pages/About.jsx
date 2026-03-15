@@ -65,8 +65,10 @@ const About = () => {
             <div className="service-item-info">
               <h4 className="service-item-title">Backend Development</h4>
               <p className="service-item-text">
-                Creating scalable APIs and backend services using Node.js and
-                Firebase.
+         
+                Firebase, and REST APIs. Experienced in authentication,
+                real-time databases, cloud functions, and mobile app
+                integration.
               </p>
             </div>
           </li>
@@ -93,6 +95,13 @@ const About = () => {
         <div className="skills-item-box">
           <div className="skills-item">
             <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+            />
+            <span>JavaScript</span>
+          </div>
+          <div className="skills-item">
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="React"
             />
@@ -106,39 +115,6 @@ const About = () => {
             />
             <span>React Native</span>
           </div>
-
-          <div className="skills-item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt="Node.js"
-            />
-            <span>Node.js</span>
-          </div>
-
-          <div className="skills-item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-              alt="Firebase"
-            />
-            <span>Firebase</span>
-          </div>
-
-          <div className="skills-item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt="JavaScript"
-            />
-            <span>JavaScript</span>
-          </div>
-
-          <div className="skills-item">
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt="Git"
-            />
-            <span>Git</span>
-          </div>
-
           <div className="skills-item">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
@@ -169,6 +145,43 @@ const About = () => {
             />
             <span>Android Studio</span>
           </div>
+          <div className="skills-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
+              alt="SwiftUI"
+            />
+            <span>SwiftUI</span>
+          </div>
+          <div className="skills-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+            />
+            <span>Node.js</span>
+          </div>
+
+          <div className="skills-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+              alt="Firebase"
+            />
+            <span>Firebase</span>
+          </div>
+
+          <div className="skills-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="Git"
+            />
+            <span>Git</span>
+          </div>
+          {/* <div className="skills-item"> */}
+            {/* <img
+              src="https://assets.codepen.io/16327/gsap-logo.svg"
+              alt="GSAP"
+            />
+            <span>GSAP</span> */}
+          {/* </div> */}
         </div>
       </section>
     </article>
