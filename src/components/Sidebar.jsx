@@ -29,8 +29,8 @@ const Sidebar = () => {
 
             <div className="contact-info">
               <p className="contact-title">EMAIL</p>
-              <a href="mailto:pranav@email.com" className="contact-link">
-                pranav@email.com
+              <a href="mailto:pranavmandal213@gmail.com" className="contact-link">
+                pranavmandal213@gmail.com
               </a>
             </div>
           </li>
@@ -71,7 +71,13 @@ const Sidebar = () => {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
+              {/* <Linkedin size={20} />   */}
+              <img
+                src="/assets/socials/linkedin.svg"
+                alt="LinkedIn"
+                width={25}
+                height={25}
+              />
             </a>
           </li>
 
@@ -83,7 +89,13 @@ const Sidebar = () => {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <Github size={20} />
+              {/* <Github size={20} /> */}
+              <img
+                src="/assets/socials/github.svg"
+                alt="GitHub"
+                width={25}
+                height={25}
+              />
             </a>
           </li>
 
@@ -95,7 +107,13 @@ const Sidebar = () => {
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
             >
-              <X size={20} />
+              {/* <X size={20} /> */}
+              <img
+                src="/assets/socials/x.svg"
+                alt="X (Twitter)"
+                width={25}
+                height={25}
+              />
             </a>
           </li>
         </ul>

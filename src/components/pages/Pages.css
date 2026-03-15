@@ -31,6 +31,7 @@
   margin-bottom: 15px;
 }
 
+/* Services Section */
 .service {
   margin-bottom: 30px;
 }
@@ -57,7 +58,6 @@
   gap: 18px;
   box-shadow: var(--box-shadow);
   border: 1px solid var(--border-color);
-  z-index: 1;
 }
 
 .service-icon-box {
@@ -78,50 +78,86 @@
   line-height: 1.6;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .service-list {
     grid-template-columns: 1fr;
   }
 }
-.skills-item-box {
-  display: flex;
-  gap: 20px;
+
+.skills-section {
+  margin-top: 40px;
+}
+
+/* Scroll container */
+.skills-container {
   overflow-x: auto;
-  padding-bottom: 10px;
+  padding: 25px 0;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  /* snap scrolling */
+  scroll-snap-type: x mandatory;
 }
 
-/* Skill item layout */
-.skills-item {
-  min-width: 90px;
+/* Skill row */
+.skills-track {
   display: flex;
-  flex-direction: column;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Each icon */
+.skill {
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
+
+  /* snap alignment */
+  scroll-snap-align: center;
 }
 
-/* Skill icon */
-.skills-item img {
-  width: 40px;
-  height: 40px;
+/* Icon style */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
+.skill img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.skill img:hover {
+  animation: zoomInOut 4s infinite ease-in-out;
+}
 /* Scrollbar styling */
-.skills-item-box::-webkit-scrollbar {
+.skills-container::-webkit-scrollbar {
   height: 6px;
 }
 
-.skills-item-box::-webkit-scrollbar-track {
-  background: #1e1e1e;
+.skills-container::-webkit-scrollbar-track {
+  background: #2a2a2a;
   border-radius: 10px;
 }
 
-.skills-item-box::-webkit-scrollbar-thumb {
-  background: #888;
+.skills-container::-webkit-scrollbar-thumb {
+  background: #f6d365;
   border-radius: 10px;
 }
 
-.skills-item-box::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
+.skills-container::-webkit-scrollbar-thumb:hover {
+  background: #ffd86f;
 }

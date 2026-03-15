@@ -36,8 +36,7 @@ const Resume = () => {
             <h4 className="timeline-item-title">Intermediate (Science)</h4>
             <span>2018 — 2020</span>
             <p className="timeline-text">
-              Completed higher secondary education with focus on mathematics and
-              computer science.
+              Completed higher secondary education with focus on mathematics.
             </p>
           </li>
         </ol>

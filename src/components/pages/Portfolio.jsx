@@ -6,14 +6,14 @@ import "./Portfolio.css";
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("All");
 
-  const tabs = ["All", "Mobile Apps", "Web Apps", "UI/UX"];
+  const tabs = ["All", "Mobile Apps", "Web Apps", ];
 
   const projects = [
     {
       id: 1,
       title: "Smart E-commerce App",
       category: "Mobile Apps",
-      image: "src/assets/appicon.png",
+      image: "src/assets/projects/appicon.png",
       link: "#",
     },
 
@@ -21,7 +21,7 @@ const Portfolio = () => {
       id: 2,
       title: "ChatCode",
       category: "Mobile Apps",
-      image: "src/assets/chatCode.png",
+      image: "src/assets/projects/chatCode.png",
       link: "#",
     },
 
@@ -29,23 +29,23 @@ const Portfolio = () => {
       id: 3,
       title: "SafeZ",
       category: "Mobile Apps",
-      image: "src/assets/safez.png",
+      image: "src/assets/projects/safez.png",
       link: "#",
     },
-
+ 
     {
       id: 4,
       title: "Portfolio Website",
       category: "Web Apps",
-      image: "/assets/projects/portfolio.png",
+      image: "src/assets/projects/portfolio.png",
       link: "#",
     },
 
     {
       id: 5,
-      title: "Booking App UI",
-      category: "UI/UX",
-      image: "/assets/projects/ui-design.png",
+      title: "Booking App ",
+      category: "Web Apps",
+      image: "src/assets/projects/Book.png",
       link: "#",
     },
   ];
@@ -53,7 +53,8 @@ const Portfolio = () => {
   const filteredProjects =
     activeTab === "All"
       ? projects
-      : projects.filter((project) => project.category === activeTab);
+      : projects.filter((project) =>
+         project.category === activeTab);
 
   return (
     <article className="article portfolio fade-in">
